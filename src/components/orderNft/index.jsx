@@ -43,7 +43,7 @@ const OrderNft = () => {
       </TableCell>
     </TableRow>
   ));
-  return <BasicTable tableName="orders" head={head} body={body} />;
+  return <BasicTable tableName="Upcoming" head={head} body={body} />;
 };
 export default OrderNft;
 const useStyles = makeStyles((theme) => ({

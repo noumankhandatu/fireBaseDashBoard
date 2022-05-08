@@ -7,33 +7,33 @@ import hot from "../../assets/sidebaricons/hot.svg";
 import live from "../../assets/sidebaricons/live.svg";
 const SideBarArray = [
   {
-    text: "orders",
+    text: "Dashboard",
     icon: order,
   },
   {
-    text: "Rca's",
+    text: "Accounts",
     icon: rca,
   },
   {
-    text: "Nft Images",
+    text: "Logout",
     icon: nft,
   },
-  {
-    text: "Feature Artwork",
-    icon: feature,
-  },
-  {
-    text: "Treding Collections",
-    icon: trend,
-  },
-  {
-    text: "Hot Collections",
-    icon: hot,
-  },
-  {
-    text: "Live Auction",
-    icon: live,
-  },
+  // {
+  //   text: "Feature Artwork",
+  //   icon: feature,
+  // },
+  // {
+  //   text: "Treding Collections",
+  //   icon: trend,
+  // },
+  // {
+  //   text: "Hot Collections",
+  //   icon: hot,
+  // },
+  // {
+  //   text: "Live Auction",
+  //   icon: live,
+  // },
 ];
 
 export default SideBarArray;

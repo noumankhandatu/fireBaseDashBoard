@@ -54,7 +54,9 @@ const RcaCard = () => {
       </TableCell>
     </TableRow>
   ));
-  return <BasicTable tableName="RCAS" head={head} body={body} addBtn="Add" />;
+  return (
+    <BasicTable tableName="Requests" head={head} body={body} addBtn="Add" />
+  );
 };
 export default RcaCard;
 const useStyles = makeStyles((theme) => ({

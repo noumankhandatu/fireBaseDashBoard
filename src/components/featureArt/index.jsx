@@ -54,7 +54,7 @@ const FeatureArt = () => {
       </TableCell>
     </TableRow>
   ));
-  return <BasicTable tableName="Feature Art" head={head} body={body} />;
+  return <BasicTable tableName="History" head={head} body={body} />;
 };
 export default FeatureArt;
 const useStyles = makeStyles((theme) => ({

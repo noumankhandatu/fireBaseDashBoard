@@ -19,13 +19,16 @@ const Dashboard = () => {
       <MiniDrawer />
 
       <Wrapper>
-        <Box className={classes.flexin}>
-          <SearchBar />
-          <Button variant="inline" endIcon={<AssessmentIcon />}>
-            Report
-          </Button>
+        <Box pb={5}>
+          <h1>Dashboard</h1>
         </Box>
-        <div className={classes.grid}>
+        <Box className={classes.flexin}>
+          <Button variant="inline" endIcon={<AssessmentIcon />}>
+            Overview
+          </Button>
+          <SearchBar />
+        </Box>
+        {/* <div className={classes.grid}>
           {Array.map((items) => {
             return (
               <IconCard
@@ -35,16 +38,16 @@ const Dashboard = () => {
               />
             );
           })}
-        </div>
+        </div> */}
         <Box pt={5} pb={3}>
           <RacCard />
         </Box>
         <Box pt={5} pb={3}>
           <OrderNft />
         </Box>
-        <Box pt={5} pb={3}>
+        {/* <Box pt={5} pb={3}>
           <ManageNft />
-        </Box>
+        </Box> */}
         <Box pt={5} pb={3}>
           <FeatureArt />
         </Box>
