@@ -12,26 +12,26 @@ export default withStyles((theme) => ({
     border: "none",
     fontWeight: 500,
     fontsize: 11,
+    textTransform: "capitalize",
   },
 
-  outlined: {
-    padding: " 20px 30px",
-    color: theme.palette.color.alpha,
+  outline: {
+    color: theme.palette.color.wolf,
     background: theme.palette.backgroundColor.iconbg1,
-    width: "90px",
-    height: "37px",
+    width: "70px",
+    height: "30px",
     borderRadius: "50px",
     "&:hover": {
       backgroundColor: alpha(theme.palette.backgroundColor.iconbg1, 0.9),
     },
   },
 
-  contained: {
+  contain: {
     borderRadius: "50px",
-    color: theme.palette.color.alpha,
+    color: theme.palette.color.wolf,
     background: theme.palette.backgroundColor.iconbg2,
-    width: "90px",
-    height: "37px",
+    width: "70px",
+    height: "30px",
     "&:hover": {
       backgroundColor: alpha(theme.palette.backgroundColor.iconbg2, 0.9),
     },
@@ -40,7 +40,7 @@ export default withStyles((theme) => ({
     borderRadius: "50px",
     color: theme.palette.color.main,
     backgroundColor: theme.palette.backgroundColor.main,
-    height: "37px",
+    height: "35px",
     "&:hover": {
       backgroundColor: alpha(theme.palette.backgroundColor.iconbg2, 0.9),
     },

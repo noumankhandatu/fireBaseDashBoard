@@ -13,8 +13,13 @@ const Wrapper = ({ children }) => {
 export default Wrapper;
 const useStyles = makeStyles((theme) => ({
   wraped: {
-    paddingLeft: "20px",
+    width: "100%",
+    padding: " 0 70px 0 40px",
     paddingTop: "3px",
-    marginLeft: "20px",
+    // margin: "0 20px",
+    [theme.breakpoints.down("xs")]: {
+      // margin: "0 10px",
+      padding: " 0 10px 0 10px",
+    },
   },
 }));

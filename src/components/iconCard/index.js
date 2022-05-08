@@ -42,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     color: theme.palette.color.primary,
     backgroundColor: theme.palette.backgroundColor.main,
-    width: "275px",
+    // width: "275px",
     height: "100px",
+    [theme.breakpoints.down("xs")]: {
+      width: "275px",
+    },
   },
 }));
