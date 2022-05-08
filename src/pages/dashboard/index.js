@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import MiniDrawer from "../../components/sidebar";
 import Wrapper from "../../components/wrapper";
 import AssessmentIcon from "@material-ui/icons/Assessment";
@@ -20,12 +20,10 @@ const Dashboard = () => {
 
       <Wrapper>
         <Box pb={5}>
-          <h1>Dashboard</h1>
+          <Typography variant="h1">Dashboard</Typography>
         </Box>
         <Box className={classes.flexin}>
-          <Button variant="inline" endIcon={<AssessmentIcon />}>
-            Overview
-          </Button>
+          <h2>Overview</h2>
           <SearchBar />
         </Box>
         {/* <div className={classes.grid}>

@@ -18,8 +18,9 @@ function App() {
         primary: mode ? "#319CFF" : "#222338",
         iconbg1: mode ? "#21A365" : "#21A365",
         iconbg2: mode ? "#F12B2C" : "#F12B2C",
-        bgColor: mode ? "#FFFFF" : "#1B1C31",
+        bgColor: mode ? "white" : "#1B1C31",
         bgtab: mode ? "#DFE0EB" : "#222338",
+        rust: mode ? "#F1F1F1" : "#222338",
       },
       icon: {
         main: mode ? "#FFE9D" : "#FFFFFF",

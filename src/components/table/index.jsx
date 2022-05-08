@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "100%",
     margin: "auto",
     borderRadius: "8px",
-    backgroundColor: theme.palette.backgroundColor.main,
+    backgroundColor: theme.palette.backgroundColor.rust,
     [theme.breakpoints.down("sm")]: {},
   },
   table: {
