@@ -7,14 +7,16 @@ export default function PaginationRounded() {
 
   return (
     <div className={classes.root}>
-      <Pagination count={3} />
+      <Pagination count={16} />
     </div>
   );
 }
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    justifyContent: "flex-end",
+    paddingTop: "20px",
+    paddingBottom: "30px",
+    justifyContent: "center",
 
     "& > *": {
       marginTop: theme.spacing(2),

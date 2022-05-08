@@ -15,39 +15,30 @@ import FeatureArt from "../../components/featureArt";
 const Dashboard = () => {
   const classes = useStyles();
   return (
-    <Box display="flex" pt={5} className={classes.bgColor}>
+    <Box display="flex" className={classes.bgColor}>
       <MiniDrawer />
-
       <Wrapper>
-        <Box pb={5}>
-          <Typography variant="h1">Dashboard</Typography>
+        <Box pt={3} pb={5}>
+          <Typography variant="h1">
+            <b>Dashboard</b>
+          </Typography>
         </Box>
-        <Box className={classes.flexin}>
-          <h2>Overview</h2>
-          <SearchBar />
-        </Box>
-        {/* <div className={classes.grid}>
-          {Array.map((items) => {
-            return (
-              <IconCard
-                count={items.count}
-                text={items.text}
-                icon={items.icon}
-              />
-            );
-          })}
-        </div> */}
-        <Box pt={5} pb={3}>
-          <RacCard />
-        </Box>
-        <Box pt={5} pb={3}>
-          <OrderNft />
-        </Box>
-        {/* <Box pt={5} pb={3}>
-          <ManageNft />
-        </Box> */}
-        <Box pt={5} pb={3}>
-          <FeatureArt />
+        <Box className={classes.entBox}>
+          <Box className={classes.flexin}>
+            <h2>
+              <b>Overview</b>
+            </h2>
+            <SearchBar />
+          </Box>
+          <Box pt={5} pb={3}>
+            <RacCard />
+          </Box>
+          <Box pt={5} pb={3}>
+            <OrderNft />
+          </Box>
+          <Box pt={5} pb={3}>
+            <FeatureArt />
+          </Box>
         </Box>
       </Wrapper>
     </Box>
@@ -79,5 +70,10 @@ const useStyles = makeStyles((theme) => ({
   },
   bgColor: {
     backgroundColor: theme.palette.backgroundColor.bgColor,
+  },
+  entBox: {
+    padding: "30px",
+    borderRadius: "10px",
+    backgroundColor: " #F1F1F1",
   },
 }));

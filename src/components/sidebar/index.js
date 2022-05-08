@@ -11,6 +11,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ListItem from "@material-ui/core/ListItem";
 import SideBarArray from "../arrays/sidebararray";
 import { Box } from "@material-ui/core";
+import logo from "../../assets/logo.png";
 const drawerWidth = 240;
 
 export default function MiniDrawer() {
@@ -38,7 +39,7 @@ export default function MiniDrawer() {
         }}
       >
         <div className={classes.toolbar}>
-          <Typography style={{ fontSize: "20px" }}>Dashboard</Typography>
+          <img src={logo} alt="" width="120px" />
           <IconButton onClick={handleDrawerOpen} className={classes.btnMagic}>
             <MenuIcon />
           </IconButton>
@@ -70,11 +71,10 @@ export default function MiniDrawer() {
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    height: "70vh",
   },
   btnMagic: {
     color: theme.palette.color.wolf,
-    backgroundColor: theme.palette.backgroundColor.primary,
+    backgroundColor: " #00639B ",
     paddingLeft: "36px",
     paddingRight: "31px",
   },
@@ -105,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerOpen: {
     color: theme.palette.color.wolf,
-    backgroundColor: theme.palette.backgroundColor.primary,
+    backgroundColor: " #00639B ",
     position: "relative",
     width: drawerWidth,
     transition: theme.transitions.create("width", {
@@ -115,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerClose: {
     color: theme.palette.color.wolf,
-    backgroundColor: theme.palette.backgroundColor.primary,
+    backgroundColor: " #00639B ",
     position: "relative",
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
@@ -129,8 +129,10 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     display: "flex",
+    paddingTop: "14px",
+    paddingBottom: "14px",
     color: theme.palette.color.wolf,
-    backgroundColor: theme.palette.backgroundColor.primary,
+    backgroundColor: " #00639B ",
     alignItems: "center",
     justifyContent: "flex-end",
   },

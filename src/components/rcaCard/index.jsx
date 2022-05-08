@@ -5,22 +5,25 @@ import Button from "../buttons";
 import BasicTable from "../table";
 import RacOptionsBtn from "./racOptionsBtn";
 const columns = [
-  "Id",
-  "tiltle",
-  "description",
-  "category",
-  "image",
-  "price",
-  "action",
+  "Date",
+  "First Name",
+  "Last Name ",
+  "Tier",
+  "Term",
+  "Amount",
+  "Interest",
+  "Total",
 ];
 
 const clients = [
-  "1",
-  "Lorem Ipsum",
-  "is simply dummy text of the printing and typesetting industry. ",
-  "01.",
-  { type: "img", src: pic },
-  "01.",
+  "4 Apr 2022",
+  "Moses",
+  "Kenwood",
+  "F3",
+  "31 days",
+  "R400",
+  "20%",
+  "R480",
 ];
 const rows = [clients, clients, clients, clients, clients];
 
@@ -45,12 +48,31 @@ const RcaCard = () => {
       )}
 
       <TableCell>
-        <Box className={classes.actionBtn}>
+        <Box display="flex" alignItems="center">
+          <Box pr={3}>
+            <Button
+              style={{ backgroundColor: "white", width: "109px" }}
+              variant="contained"
+            >
+              Approve
+            </Button>
+          </Box>
+          <Box>
+            <Button
+              style={{ backgroundColor: "#36A2DA", width: "109px" }}
+              variant="contained"
+              color="primary"
+            >
+              Reject
+            </Button>
+          </Box>    
+        </Box>
+        {/* <Box className={classes.actionBtn}>
           <Button className={classes.btnview} variant="outline">
             view
           </Button>
           <RacOptionsBtn />
-        </Box>
+        </Box> */}
       </TableCell>
     </TableRow>
   ));

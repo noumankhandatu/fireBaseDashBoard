@@ -22,25 +22,22 @@ export default function BasicTable({
   const classes = useStyles();
 
   return (
-    <TableContainer className={classes.main} component={Paper}>
+    <Box>
       <Box className={classes.tableHeading}>
-        {tableName}
-        {/* {addBtn && (
-          <Button className={classes.addBtnTitleBar} endIcon={<AddIcon />}>
-            {addBtn}
-          </Button>
-        )} */}
+        <b>{tableName}</b>
       </Box>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead className="tablehead">
-          <TableRow className={classes.textrow}>{head}</TableRow>
-        </TableHead>
-        <TableBody className={classes.textcol}>{body}</TableBody>
-      </Table>
-      <Box>
-        <PaginationRounded />
-      </Box>
-    </TableContainer>
+      <TableContainer className={classes.main} component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead className="tablehead">
+            <TableRow className={classes.textrow}>{head}</TableRow>
+          </TableHead>
+          <TableBody className={classes.textcol}>{body}</TableBody>
+        </Table>
+        <Box>
+          <PaginationRounded />
+        </Box>
+      </TableContainer>
+    </Box>
   );
 }
 const useStyles = makeStyles((theme) => ({
@@ -74,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   tableHeading: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "30px  65px 30px 65px",
+    padding: "30px  10px 30px 2px",
     color: theme.palette.color.primary,
     textTransform: "uppercase",
     fontSize: 15,
